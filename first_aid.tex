@@ -1,0 +1,97 @@
+\documentclass[12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in, bindingoffset=0.35in}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{microtype}
+\emergencystretch=2em
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
+\usepackage{setspace}
+\setstretch{1.15}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
+\usepackage{makeidx}
+\makeindex
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\nouppercase{\leftmark}}
+\fancyhead[RO]{\small\nouppercase{\leftmark}}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\newcommand{\quicknote}[1]{\noindent\textbf{Note:} #1\par\vspace{0.5em}}
+
+\title{\textbf{\Huge FIRST AID}\\[1em]\Large A Comprehensive First Aid Reference Manual\\[0.5em]\small First Edition\\[0.3em]\small Following the 2024 AHA/ARC First Aid Guidelines, ILCOR 2025, and ERC Guidelines 2025}
+\author{Chaman Singh Verma}
+\date{\today}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\clearpage
+
+\section*{Preface}
+
+This reference provides first aid guidance for the Indian lay responder, based on current evidence-based protocols from leading international health organizations, including the 2024 American Heart Association / American Red Cross First Aid Guidelines, the 2025 International Liaison Committee on Resuscitation (ILCOR) Consensus on Science with Treatment Recommendations, the 2025 European Resuscitation Council Guidelines, and the World Health Organization (WHO) First Aid Guidelines (2018). It is designed for people without medical training who want clear, actionable information on managing common injuries and emergencies before professional medical help arrives — whether at home, at work, on the road, or in the field.
+
+\textbf{Purpose and Scope}
+
+The content covers practical, step-by-step management of the most frequently encountered first aid scenarios in the Indian context — from bleeding control and wound care to cardiac events, respiratory distress, environmental injuries, snakebite, heat-related illness, and toxic exposures. Emergency numbers, Good Samaritan protections, disaster preparedness, and poison control guidance are given for India (dial 112 or 108 for emergency ambulance services), while noting that local numbers vary by state. Emphasis is placed on recognizing when professional medical care is required and what actions can safely be performed at the scene.
+
+\textbf{How to Use This Reference}
+
+Each section follows a consistent structure: recognition of signs and symptoms, immediate first aid actions, warning signs indicating escalation to emergency care, and important contraindications (what not to do). Quick-reference warnings and notes highlight critical safety points. Turn to the relevant chapter by injury type or clinical presentation.
+
+\textbf{Important Disclaimer}
+
+This material is for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment. First aid should never replace professional medical evaluation or care when indicated. Always seek qualified medical attention for serious injuries, persistent symptoms, or uncertain situations. Laws, regulations, and available resources vary across states and regions; consult local health authorities, the National Health Mission, and certified first aid training programs for region-specific guidance.
+
+No person should perform any procedure beyond their level of training and comfort. When in doubt, call emergency services immediately.
+
+\textbf{Acknowledgments}
+
+This work draws upon authoritative sources including the 2024 AHA/ARC First Aid Guidelines, the 2025 ILCOR CoSTR, the ERC Guidelines 2025, World Health Organization, American Heart Association, American Red Cross, the Indian Red Cross Society \cite{ircs}, the National Disaster Management Authority (NDMA) \cite{ndma}, the National Poisons Information Centre (AIIMS New Delhi) \cite{npic}, the Supreme Court of India's Good Samaritan guidelines \cite{sc_goodsam}, Centers for Disease Control and Prevention, and national poison control centers. Special thanks to first responders, emergency physicians, and public health educators whose expertise informed the content development.
+
+We welcome feedback and corrections. Please contact the authors with any suggestions for improvement.
+
+
+\mainmatter
+
+\include{chapters/introduction}
+\include{chapters/basic_principles}
+\include{chapters/assessment}
+\include{chapters/bleeding_control}
+\include{chapters/cpr_and_airway}
+\include{chapters/medical_emergencies}
+\include{chapters/injury_management}
+\include{chapters/environmental_first_aid}
+\include{chapters/special_populations}
+\include{chapters/disaster_response}
+\include{chapters/wilderness_first_aid}
+\include{chapters/practice_scenarios}
+
+\appendix
+\include{chapters/quick_reference}
+\include{chapters/firstaid_kit}
+\include{chapters/emergency_forms}
+
+\backmatter
+\include{chapters/answer_key}
+\include{chapters/references}
+\include{chapters/glossary}
+\printindex
+
+\end{document}

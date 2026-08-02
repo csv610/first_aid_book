@@ -1,0 +1,17 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.out
+*.idx
+*.ind
+*.glo
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.pdf
+
+# Compiled PDFs
+first_aid.pdf
