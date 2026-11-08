@@ -31,13 +31,30 @@ Simple Triage And Rapid Treatment (START) categorizes victims into four groups:
   \item[Deceased/Expectant (Black)] Deceased or expectant (injuries so severe that survival unlikely with available resources); transport last or none
 \end{description}
 
-\subsubsection{START Assessment Steps}
+\subsubsection{START Assessment Steps (RPM Algorithm)}
+
+Triage each casualty in under 60 seconds using the standardized RPM (Respirations, Perfusion, Mental Status) sequence \cite{who_mtbs}:
 
 \begin{enumerate}
-  \item \textbf{Walk Test}: Have all able-bodied individuals walk toward you. Those who cannot walk go to Red category
-  \item \textbf{Respiratory Check}: For non-walking patients, assess breathing. If not breathing, open airway. If still not breathing -> Black (expectant/dead). If breathing proceed
-  \item \textbf{Perfusion Check}: Check capillary refill (press fingernail bed — should color return in <2 seconds). If >2 seconds Red (poor perfusion/shock)
-  \item \textbf{Mental Status Check}: Ask simple commands ("Shake your head," "Raise your hand"). If patient cannot obey Red (altered mental status). Otherwise Yellow (can follow commands, adequate breathing/perfusion)
+  \item \textbf{Ability to Walk}: Direct all individuals who are able to walk to a designated safe collection point. All walking casualties are categorized as \textbf{Green (Minor / Walking Wounded)}. Non-ambulatory casualties are evaluated next.
+  \item \textbf{R -- Respirations}:
+    \begin{itemize}
+      \item If the person is not breathing: open the airway manually (head-tilt/chin-lift or jaw-thrust). If breathing resumes, categorize as \textbf{Red (Immediate)}. If breathing does not start after positioning, categorize as \textbf{Black (Deceased / Expectant)}.
+      \item If breathing is faster than 30 breaths per minute ($>30/\text{min}$): categorize as \textbf{Red (Immediate)}.
+      \item If breathing is normal (under 30 breaths per minute): proceed to check perfusion.
+    \end{itemize}
+  \item \textbf{P -- Perfusion}:
+    \begin{itemize}
+      \item Check for a radial pulse or capillary refill time on the fingernail bed.
+      \item If radial pulse is absent OR capillary refill exceeds 2 seconds ($>2\text{ s}$): categorize as \textbf{Red (Immediate)} and control any severe bleeding immediately.
+      \item If radial pulse is present and capillary refill is under 2 seconds: proceed to check mental status.
+    \end{itemize}
+  \item \textbf{M -- Mental Status}:
+    \begin{itemize}
+      \item Give a simple command (e.g., "Squeeze my fingers" or "Touch your nose").
+      \item If the person cannot obey simple commands (unconscious or confused): categorize as \textbf{Red (Immediate)}.
+      \item If the person follows simple commands with normal respirations and perfusion: categorize as \textbf{Yellow (Delayed)}.
+    \end{itemize}
 \end{enumerate}
 
 \noindent\textbf{NOTE}: Triage is dynamic. Patients categorized as Delayed may deteriorate and require reclassification to Immediate. Monitor all patients continuously.
